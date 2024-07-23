@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 5em;
+            display:flex;
+            justify-content: center;
+            background-color: #00DBDE;
+             background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+           
+        }
+        .typewriter h1{
+            font-size: 150px;
+            color: brown;
+            font-family: "sofia",sans-serif;
+            overflow: hidden;
+            font-style: italic;
+            /* border-right: .15em solid linear-gradient(to right, black); */
+            letter-spacing: .15em;
+            animation:
+           
+            typing 5s steps(10,end) 3s forwards,
+            blink-caret 5s step-end infinite;
+        }
+        @keyframes typing{
+            from{width: 0}
+            to {width: 100%}
+        }
+        @keyframes blink-caret{
+            from
+             {border-color: transparent}
+             to
+            100% {border-color: black;}
+        }
+    </style>
+</head>
+<body>
+    <div class="typewriter">
+        <h1>💔 फुलवा सुखल बा पतझड़ में , बगिया उजड़ गईल...💔
+             </h1>
+    </div>
+</body>
+</html>

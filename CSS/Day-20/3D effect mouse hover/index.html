@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            font-size: 30px;
+            text-align: center;
+            font-weight: 900;
+        }
+         section{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            overflow: hidden;
+            flex-wrap: wrap;
+            animation: chengecolor 5s linear infinite;           
+         }
+         @keyframes chengecolor {
+            0%{
+                filter: hue-rotate(0deg);
+            }
+            100%{
+                filter: hue-rotate(360deg);
+            }
+         }
+         span{
+            position: relative;
+            width: 40px;
+            height: 40px;
+            display: block;
+           
+             
+         }
+         span::before
+         {
+            width: 100%;
+            height: 100%;
+            transform: scale(.1);
+            background-color: green;           
+            content: 'RAJU kumar';          
+            position: absolute;
+            transition: 1s;
+            box-shadow: 5px 5px 5px green,
+            -5px -5px 5px green,
+            -5px 5px 5px green,
+            5px -5px 5px green;
+            border-radius: 50%;
+            pointer-events: none;
+         }
+         span:hover:before{
+            transform: scale(1);
+            transition: all;               
+         }
+         span{
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+         }
+    </style>
+</head>
+<body>
+    <section>
+        <span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span><span></span><span></span><span></span></span><span></span><span></span><span></span><span></span></span><span></span><span></span><span></span></span><span></span><span></span><span></span>
+    </section>
+</body>
+</html>

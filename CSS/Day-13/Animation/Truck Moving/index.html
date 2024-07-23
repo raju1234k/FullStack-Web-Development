@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      
+        .left img{
+            width: 150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 555px;
+            left: 0;
+            top: 18rem;
+            overflow: hidden;
+        }
+       .bodyy{
+        animation: move 5s linear  0s infinite ;
+       }
+       @keyframes move {
+        0%{
+            transform: translateX(-70px);
+        }
+        100%{
+            transform: translateX(1300px);
+        }
+       }
+       
+    </style>
+</head>
+<body>
+        <div class="bodyy">
+            <div class="left">
+                <img src="car.jpeg" >
+            </div>      
+        </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           width: 300px;
+            border: 5px solid black;
+            display: flex;
+            background-color: aqua;
+        }
+
+        #box1{
+            width: 50%;
+            background-color: brown;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+        }
+
+        #box2{
+            width: 50%;
+            background-color: chartreuse;
+            border: 3px solid blue;
+            margin: 5px;
+        }
+       
+
+
+        @media (max-width:200px){
+        .container
+            {
+                flex-direction: column;
+             }
+            
+            
+        }
+
+
+        @media (max-width:100px){
+            
+                .box1.box2{
+                    flex-direction: column;
+                }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="box" id="box1">
+        <input type="text" placeholder="enter a text">
+        <br>
+        <br>
+        <br>
+       <div>
+            <button>button1</button>
+            <button>button2</button>
+        </div>
+    </div>
+    <div class="box" id="box2">
+              <img src="khusi.jpg" alt="" width="70px">
+    </div>
+    </div>
+</body>
+</html>

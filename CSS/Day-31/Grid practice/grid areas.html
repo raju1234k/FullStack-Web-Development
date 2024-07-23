@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid areas</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            margin: auto;
+            display: grid;
+            padding: 2rem;
+            gap:2px;
+            grid-template-areas:
+            "Header Header Header"
+            "Sidebar Content1 Content1"
+            "Sidebar Content2 Content3"
+            "Footer Footer Footer"
+             ;
+        }
+        .box{
+            background-color: rgb(12, 12, 95);
+            color: white;
+            border: 1px solid black;
+            padding: 2rem;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-size: 50px;
+        }
+        #Header{
+            grid-area:Header ;
+        }
+        #Sidebar{
+            grid-area:Sidebar ;
+        }
+        #Content1{
+            grid-area:Content1 ;
+        }
+        #Content2{
+            grid-area:Content2 ;
+        }
+        #Content3{
+            grid-area:Content3 ;
+        }
+        #Footer{
+            grid-area:Footer ;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="box" id="Header">Header</div>
+            <div class="box" id="Sidebar">Sidebar</div>
+            <div class="box" id="Content1">Content1</div>
+            <div class="box" id="Content2">Content2</div>
+            <div class="box" id="Content3">Content3</div>
+            <div class="box" id="Footer">Footer</div>
+    </div>
+</body>
+</html>

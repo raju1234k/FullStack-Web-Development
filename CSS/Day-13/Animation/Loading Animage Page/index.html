@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgray;
+           position: absolute;
+        }
+       
+         span{
+            width: 60px;
+            height: 60px;
+            background-color: black;
+            position: absolute;
+            top: 35%;
+            left: 43%;
+            animation: round 2s ease-in-out infinite;
+         }
+         @keyframes round {
+            0%{
+                top: 35%;
+                left: 43%;
+            }
+            25%{
+                top: 35%;
+                left: 51%;
+            }
+            50%{
+                top: 55%;
+                left: 51%;
+            }75%{
+                top: 55%;
+                left: 43%;
+            }
+            100%{
+                top: 35%;
+                left: 43%;
+            }
+            
+         }
+         span:nth-child(1){
+            animation-delay: 1s;
+            top: 35%;
+            left: 43%;
+         }
+         span:nth-child(2){
+            animation-delay: 1.5s;
+            top: 35%;
+                left: 51%;
+         }
+         span:nth-child(3){
+            animation-delay: 2s;
+            top: 55%;
+                left: 51%;
+         }
+         span:nth-child(4){
+            animation-delay: 2.5s;
+            top: 55%;
+                left: 43%;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">      
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>      
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(4,1fr);
+            gap: 2rem;
+            padding: 30px;
+        }
+        .item{
+            
+            background-color: rgba(255, 68, 0, 0.844);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+           
+        }
+        .item1{
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+        .Header{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .Content1{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .Content2{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .Footer{
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">Sidebar</div>
+        <div class="item Header">Header</div>
+        <div class="item Content1">Content1</div>
+        <div class="item Content2">Content2</div>
+        <div class="item">Content3</div>
+        <div class="item">Content4</div>
+        <div class="item Footer">Footer</div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing ball Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+        }
+        .line{
+            width: 340px;
+            height: 200px;
+            position: absolute;
+            top: 22%;
+            left: 40%;
+            box-shadow: 0px 10px 0px darkgray;
+        }
+        .circle1{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            border-radius: 50%;
+            animation: jump 1s linear alternate infinite .4s;
+        }
+        @keyframes jump {
+            0%{
+                transform: translateY(0px);
+            }
+            100%{
+                transform: translateY(-200px);
+            }
+        }
+        .circle2{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(255, 0, 242);
+            border-radius: 50%;
+            animation: jump 1s linear alternate infinite ;
+        }
+        .circle3{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(66, 255, 45);
+            border-radius: 50%;
+            animation: jump 1s linear alternate infinite .2s;
+        }
+        .circle4{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(15, 1, 219);
+            border-radius: 50%;
+            animation: jump 1s linear alternate infinite .5s;
+            
+        }
+        .circle5{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(219, 1, 1);
+            border-radius: 50%;
+            animation: jump 1s linear alternate infinite .8s;
+           
+        }
+        .circle6{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(255, 162, 0);
+            border-radius: 50%;
+            animation: jump 1s linear alternate infinite .7s;
+           
+        }
+        .div{
+            display: flex;
+            gap: 20px;
+            position: absolute;
+            top: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">    
+        <div class="line">
+            <div class="div">
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+                <div class="circle6"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartbit</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       body{
+        background-image: linear-gradient(  red , blue);
+       }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-bottom-left-radius: 50%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        .container{
+            position: absolute;
+            top: 25%;
+            left: 40%;          
+            animation: op 1.2s linear infinite  alternate ;
+          
+        }
+       
+        @keyframes op {
+            0%{
+                
+                transform: scale(.7);
+            }   
+            100%{
+               
+                transform: scale(.8);
+            }
+            
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: .1%;
+            left: 98%;
+            border-bottom-right-radius: 50%;
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        .box3{
+            width: 220px;
+            height: 220px;
+            background-color: red;
+            position: absolute;
+            left: 40%;
+            top: 63px;
+            transform: rotate(44deg);
+            border-top-left-radius: 80%;
+        }
+        .box4{
+            width: 20px;
+            height: 220px;
+            background-color: red;
+            left: 132%;
+            top: 65%;
+           
+            transform: rotate(48deg);
+            position: absolute;
+        }
+      
+       
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+      
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <style>
+         *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: #9c9d9d;
+            /* background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .card{
+            width: 400px;
+            height: 600px;
+            background-color: antiquewhite;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            box-shadow:
+                 5px 5px 5px rgb(4, 4, 4),
+                 -5px -5px 5px rgb(0, 0, 0),
+                 -5px 5px 5px rgb(0, 0, 0),
+                 5px -5px 5px rgb(0, 0, 0)
+            ;
+        }
+        .card img{
+            width: 400px;
+            height: 220px;
+            border-radius: 20px;
+            box-shadow:
+              5px 5px 5px rgb(4, 4, 4),
+              -5px -5px 5px rgb(0, 0, 0),
+              -5px 5px 5px rgb(0, 0, 0),
+                5px -5px 5px rgb(0, 0, 0)
+            ;
+        }
+        .card h2{
+            text-align: center;
+            margin: 15px;
+            font-size: 30px;
+        }
+        #div{
+            width: 250px;
+            height: 100px;
+            
+            display: flex;
+            margin: auto;
+        }
+           #div p{
+            font-size: 25px;
+            text-align: center;
+           }
+        .div1{
+            width:300px ;
+            height: 60px;
+            background-color: #8bc5ec66;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            margin: auto;
+            box-shadow:
+                 5px 5px 5px rgb(4, 4, 4),
+                 -5px -5px 5px rgb(0, 0, 0),
+                 -5px 5px 5px rgb(0, 0, 0),
+                 5px -5px 5px rgb(0, 0, 0)
+            ;
+        }
+        .div2{
+            width:300px ;
+            height: 60px;
+            padding: 15px;
+            text-align: center;
+            background-color: blue;
+            margin: auto;
+            box-shadow:
+                 5px 5px 5px rgb(4, 4, 4),
+                 -5px -5px 5px rgb(0, 0, 0),
+                 -5px 5px 5px rgb(0, 0, 0),
+                 5px -5px 5px rgb(0, 0, 0)
+            ;
+        }
+        .card h3{
+            text-align: center;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+         <img src="">
+       
+            <h2>Order Summary</h2>
+         <div id="div">
+           <p> Deserunt nam fugit mollitia atque adipisci voluptatem!</p>
+         </div>
+         <div class="div1">
+            <h3>Annual Plan</h3>
+            <h3><a href="#">Change</a></h3>
+
+         </div>
+         <br>
+         <div class="div2">
+            <h3 ><a href="#" style="color: antiquewhite;">Proceed to Payment </a></h3>
+         </div>
+         <h2><a href="">Cancle Order</a></h2>
+        
+        </div>
+
+    </div>
+</body>
+</html>

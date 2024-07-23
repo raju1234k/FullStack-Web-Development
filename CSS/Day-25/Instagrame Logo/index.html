@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagrame</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .instagramelogo{
+            width: 300px;
+            height: 300px;
+            background-image: linear-gradient(to bottom left, blue, purple,red,yellow);
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .border{
+            width: 200px;
+            height: 200px;
+            border: 10px solid white;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            border: 10px solid white;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .icon{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+           position: relative;
+            top:-35%;
+            left: 35%;
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="instagramelogo">
+            <div class="border">
+                <div class="icon"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

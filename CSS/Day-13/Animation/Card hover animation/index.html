@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card hover effects</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 4rem;
+           justify-content: center;
+           align-items: center;
+           position: absolute;
+            
+        }
+        .box1{
+            width: 250px;
+            height: 430px;
+            padding: 1rem;
+            box-shadow: 2px 2px 2px darkgray,
+            -2px -2px 2px darkgray,
+            -2px 2px 2px darkgray,
+            2px -2px 2px darkgray;
+            overflow: hidden;
+         
+        }
+        .box2{
+           
+            width: 250px;
+            height: 430px;
+            padding: 1rem;
+            box-shadow: 2px 2px 2px darkgray,
+            -2px -2px 2px darkgray,
+            -2px 2px 2px darkgray,
+            2px -2px 2px darkgray;
+            overflow: hidden;
+        }
+        .box3{
+            width: 250px;
+            height: 430px;
+            padding: 1rem;
+            box-shadow: 2px 2px 2px darkgray,
+            -2px -2px 2px darkgray,
+            -2px 2px 2px darkgray,
+            2px -2px 2px darkgray;
+            overflow: hidden;
+        }
+        h1{
+            font-size: 25px;
+        }
+        body{
+            background-color: black;
+            color: white;
+            font-family: aria;
+        }
+        .icon{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;          
+            margin-left: 33%;
+            display: flex;
+            transition: 1s;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            box-shadow: 0px 0px 0px;
+        }
+        p{
+            text-align: justify;
+        }
+        .button{
+            text-align: center;
+            font-size: 20px;   
+            width: 140px;
+            height: 40px;
+            margin-left: 3%;
+            margin-top: 1%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;           
+            overflow: hidden;
+            position: absolute;
+        }
+        .box3 h1{
+            margin-left: 15px;
+        }
+         .box1 .icon{
+            background-color: red;
+            color: white; 
+           
+        }
+        .box1:hover {
+             color: rgb(0, 0, 0);          
+           .icon{
+                box-shadow: 0px 0px 0px 400px red;
+                background-color: black;               
+                }  
+              .button span:nth-child(1){
+                background: linear-gradient(to right,rgb(255, 0, 0),rgb(255, 0, 0));
+               }
+              .button span:nth-child(2){
+                background: linear-gradient(to right,rgb(255, 0, 0),rgb(255, 0, 0));
+               }
+               .button span:nth-child(3){
+                background: linear-gradient(to right,rgb(255, 0, 0),rgb(255, 0, 0));
+               }
+              .button span:nth-child(4){
+                background: linear-gradient(to right,rgb(255, 0, 0),rgb(255, 0, 0));
+               }
+               .button{
+                   box-shadow: 5px 5px 5px white,
+                              -5px -5px 5px white,
+                              -5px 5px 5px white,
+                           5px -5px 5px white;
+            }
+        }   
+        .box1::before{
+            content: '';
+            position: absolute;
+        } 
+        .button span:nth-child(1){
+            width: 140px;
+            height: 3px;
+            position: absolute;
+            background: linear-gradient(to right,rgb(255, 0, 0),blue);
+            animation: first .8s linear infinite ;
+            overflow: hidden;
+            top: 0;
+        }
+        @keyframes first {
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        .button span:nth-child(2){
+            width: 3px;
+            height: 30px;
+            right: 0;
+            position: absolute;
+            background: linear-gradient(to bottom,rgb(255, 0, 0),blue);
+            animation: second 1s linear infinite  ;
+            overflow: hidden;
+        }
+        @keyframes second {
+            0%{
+                transform: translatey(-100%);
+            }
+            100%{
+                transform: translatey(100%);
+            }
+        }
+        .button span:nth-child(3){
+            width: 140px;
+            height: 3px;
+            position: absolute;
+            background: linear-gradient(to left,rgb(255, 0, 0),blue);
+            animation: third .8s linear infinite ;
+            overflow: hidden;
+            bottom: 0;
+        }
+        @keyframes third {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        .button span:nth-child(4){
+            width: 3px;
+            height: 30px;
+            left: 0;
+            position: absolute;
+            background: linear-gradient(to top,rgb(255, 0, 0),blue);
+            animation: forth 1s linear infinite  ;
+            overflow: hidden;
+        }
+        @keyframes forth {
+            0%{
+                transform: translatey(100%);
+            }
+            100%{
+                transform: translatey(-100%);
+            }
+        }
+        .box2 .icon{
+            background-color: rgb(0, 0, 255);
+            color: white; 
+        }     
+        .box2:hover {
+             color: rgb(0, 0, 0);      
+           .icon{
+                box-shadow: 0px 0px 0px 400px rgb(181, 181, 181);
+                background-color: black;
+              
+            }  
+            .button span:nth-child(1){
+                background: linear-gradient(to right,rgb(181, 181, 181),rgb(181, 181, 181));
+            }
+            .button span:nth-child(2){
+                background: linear-gradient(to right,rgb(181, 181, 181),rgb(181, 181, 181));
+            }
+            .button span:nth-child(3){
+                background: linear-gradient(to right,rgb(181, 181, 181),rgb(181, 181, 181));
+            }
+            .button span:nth-child(4){
+                background: linear-gradient(to right,rgb(181, 181, 181),rgb(181, 181, 181));
+            }
+            .button{
+                box-shadow: 5px 5px 5px white,
+                           -5px -5px 5px white,
+                           -5px 5px 5px white,
+                           5px -5px 5px white;
+            }
+        }   
+        .box2::before{
+            content: '';
+            position: absolute;
+        } 
+        .button span:nth-child(1){
+            width: 140px;
+            height: 3px;
+            position: absolute;
+            background: linear-gradient(to right,rgb(255, 0, 0),blue);
+            animation: first .8s linear infinite ;
+            overflow: hidden;
+            top: 0;
+        }
+        @keyframes first {
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        .button span:nth-child(2){
+            width: 3px;
+            height: 30px;
+            right: 0;
+            position: absolute;
+            background: linear-gradient(to bottom,rgb(255, 0, 0),blue);
+            animation: second 1s linear infinite  ;
+            overflow: hidden;
+        }
+        @keyframes second {
+            0%{
+                transform: translatey(-100%);
+            }
+            100%{
+                transform: translatey(100%);
+            }
+        }
+        .button span:nth-child(3){
+            width: 140px;
+            height: 3px;
+            position: absolute;
+            background: linear-gradient(to left,rgb(255, 0, 0),blue);
+            animation: third .8s linear infinite ;
+            overflow: hidden;
+            bottom: 0;
+        }
+        @keyframes third {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        .button span:nth-child(4){
+            width: 3px;
+            height: 30px;
+            left: 0;
+            position: absolute;
+            background: linear-gradient(to top,rgb(255, 0, 0),blue);
+            animation: forth 1s linear infinite  ;
+            overflow: hidden;
+        }
+        @keyframes forth {
+            0%{
+                transform: translatey(100%);
+            }
+            100%{
+                transform: translatey(-100%);
+            }
+        }
+        .box3 .icon{
+            background-color: rgb(0, 255, 89);
+            color: white; 
+        }     
+        .box3:hover {
+             color: rgb(0, 0, 0);      
+           .icon{
+                box-shadow: 0px 0px 0px 400px rgb(255, 226, 3);
+                background-color: black;
+              
+            }  
+            .button span:nth-child(1){
+                background: linear-gradient(to right,rgb(255, 226, 3),rgb(255, 226, 3));
+            }
+            .button span:nth-child(2){
+                background: linear-gradient(to right,rgb(255, 226, 3),rgb(255, 226, 3));
+            }
+            .button span:nth-child(3){
+                background: linear-gradient(to right,rgb(255, 226, 3),rgb(255, 226, 3));
+            }
+            .button span:nth-child(4){
+                background: linear-gradient(to right,rgb(255, 226, 3),rgb(255, 226, 3));
+            }
+            .button{
+                box-shadow: 5px 5px 5px white,
+                           -5px -5px 5px white,
+                           -5px 5px 5px white,
+                           5px -5px 5px white;
+            }
+        }   
+        .box3::before{
+            content: '';
+            position: absolute;
+        } 
+        .button span:nth-child(1){
+            width: 140px;
+            height: 3px;
+            position: absolute;
+            background: linear-gradient(to right,rgb(255, 0, 0),blue);
+            animation: first .8s linear infinite ;
+            overflow: hidden;
+            top: 0;
+        }
+        @keyframes first {
+            0%{
+                transform: translateX(-100%);
+            }
+            100%{
+                transform: translateX(100%);
+            }
+        }
+        .button span:nth-child(2){
+            width: 3px;
+            height: 30px;
+            right: 0;
+            position: absolute;
+            background: linear-gradient(to bottom,rgb(255, 0, 0),blue);
+            animation: second 1s linear infinite  ;
+            overflow: hidden;
+        }
+        @keyframes second {
+            0%{
+                transform: translatey(-100%);
+            }
+            100%{
+                transform: translatey(100%);
+            }
+        }
+        .button span:nth-child(3){
+            width: 140px;
+            height: 3px;
+            position: absolute;
+            background: linear-gradient(to left,rgb(255, 0, 0),blue);
+            animation: third .8s linear infinite ;
+            overflow: hidden;
+            bottom: 0;
+        }
+        @keyframes third {
+            0%{
+                transform: translateX(100%);
+            }
+            100%{
+                transform: translateX(-100%);
+            }
+        }
+        .button span:nth-child(4){
+            width: 3px;
+            height: 30px;
+            left: 0;
+            position: absolute;
+            background: linear-gradient(to top,rgb(255, 0, 0),blue);
+            animation: forth 1s linear infinite  ;
+            overflow: hidden;
+        }
+        @keyframes forth {
+            0%{
+                transform: translatey(100%);
+            }
+            100%{
+                transform: translatey(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="icon">1</div>
+            <br>
+            <h1>Web Development</h1>
+            <br>
+           <p> aspernatur accusamus repudiandae porro sequi quam ducimus numquam fugiat id expedita, nihil perferendis sed delectus earum deleniti. Inventore quas fuga dolor dignissimos obcaecati id iste eius, sint provident repudiandae quis officia perspiciatis pariatur quam in a blanditiis vero reiciendis. Voluptatibus </p>
+           <br>
+          
+            <div class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Read More
+            </div>
+        </div>
+        <div class="box2">
+            <div class="icon">2</div>
+            <br>
+            <h1>App Development</h1>
+            <br>
+           <p> aspernatur accusamus repudiandae porro sequi quam ducimus numquam fugiat id expedita, nihil perferendis sed delectus earum deleniti. Inventore quas fuga dolor dignissimos obcaecati id iste eius, sint provident repudiandae quis officia perspiciatis pariatur quam in a blanditiis vero reiciendis. Voluptatibus </p>
+           <br>
+            <div class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Read More
+            </div>
+        </div>
+        <div class="box3">
+            <div class="icon">3</div>
+            <br>
+            <h1>Game Developer</h1>
+            <br>
+           <p> aspernatur accusamus repudiandae porro sequi quam ducimus numquam fugiat id expedita, nihil perferendis sed delectus earum deleniti. Inventore quas fuga dolor dignissimos obcaecati id iste eius, sint provident repudiandae quis officia perspiciatis pariatur quam in a blanditiis vero reiciendis. Voluptatibus </p>
+           <br>
+            <div class="button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Read More
+            </div>
+        </div>
+    </div>
+</body>
+</html>

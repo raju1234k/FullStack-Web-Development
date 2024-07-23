@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            display: flex;
+           justify-content: space-evenly;
+        }
+        .container{
+            margin-top: 5rem;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateX(450deg);
+        }
+        .container span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;         
+            animation: moov 8s ease-in-out infinite ;
+        }    
+        @keyframes moov {
+            0%{
+               transform: translateZ(-100px);
+               width: 100%;
+               height: 100%;
+            }
+            25%{
+                transform: translateZ(100px);
+                width: 100%;
+               height: 100%;
+
+            }
+            50%{
+                transform: translateZ(100px);
+               width: 15%;
+               height: 15%;
+
+            }
+            75%{
+                transform: translateZ(-100px);
+                width: 15%;
+               height: 15%;
+
+            }
+            100%{
+                transform: translateZ(-100px);
+               width: 100%;
+               height: 100%;
+
+            }
+            
+        }
+        .container span:nth-child(1){
+            animation-delay: .1s;
+            border: 15px solid blue;
+        }
+        .container span:nth-child(2){
+            animation-delay: 1.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .container span:nth-child(3){
+            animation-delay: 2s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .container span:nth-child(4){
+            animation-delay: 2.5s;
+            border: 15px solid rgb(255, 255, 255);
+        }
+        .container span:nth-child(5){
+            animation-delay: 3s;
+            border: 15px solid rgb(225, 0, 255);
+        }
+        .container span:nth-child(6){
+            animation-delay: 4.5s;
+            border: 15px solid blue;
+        }
+        .container span:nth-child(7){
+            animation-delay: 6s;
+            border: 15px solid rgb(255, 255, 255);
+        }
+        .container span:nth-child(8){
+            animation-delay: 8.5s;
+            border: 15px solid rgb(0, 251, 255);
+        }
+        
+        .right{
+            margin-top: 5rem;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateX(135deg);
+        }
+        .right span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;         
+            animation: zoom 8s linear infinite ;
+        }  
+        @keyframes zoom {
+            0%{
+                transform: scale(.1);
+            }
+            30%{
+                transform: scale(.5);
+            }
+            50%{
+                transform: scale(1);
+            }
+            80%{
+                transform: scale(.5);
+            }
+            100%{
+                transform: scale(.1);
+            }
+        }
+        .right span:nth-child(1){
+            animation-delay: .1s;
+            border: 15px solid blue;
+        }
+        .right span:nth-child(2){
+            animation-delay: 1.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .right span:nth-child(3){
+            animation-delay: 2s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .right span:nth-child(4){
+            animation-delay: 2.5s;
+            border: 15px solid blue;
+        }
+        .right span:nth-child(5){
+            animation-delay: 3s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .right span:nth-child(6){
+            animation-delay: 3.5s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .right span:nth-child(7){
+            animation-delay: 5s;
+            border: 15px solid blue;
+        }
+        .right span:nth-child(8){
+            animation-delay: 6.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .right span:nth-child(9){
+            animation-delay: 8s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .left{
+            margin-top: 5rem;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateX(240deg);
+        }
+        .left span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;         
+            animation: zoomin 8s linear infinite ;
+        }  
+        @keyframes zoomin {
+            0%{
+                transform: scale(.1);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+            30%{
+                transform: scale(.5);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+            50%{
+                transform: scale(1);
+                transform: translateZ(100px);
+                width: 15%;height: 15px;
+            }
+            80%{
+                transform: scale(.5);
+                transform: translateZ(100px);
+                width: 15%;height: 15%;
+            }
+            100%{
+                transform: scale(.1);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+        }
+        .left span:nth-child(1){
+            animation-delay: .1s;
+            border: 15px solid blue;
+        }
+        .left span:nth-child(2){
+            animation-delay: 1.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .left span:nth-child(3){
+            animation-delay: 2s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .left span:nth-child(4){
+            animation-delay: 2.5s;
+            border: 15px solid blue;
+        }
+        .left span:nth-child(5){
+            animation-delay: 3s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .left span:nth-child(6){
+            animation-delay: 3.5s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .left span:nth-child(7){
+            animation-delay: 5s;
+            border: 15px solid blue;
+        }
+        .left span:nth-child(8){
+            animation-delay: 6.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .left span:nth-child(9){
+            animation-delay: 8s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .top{
+            margin-top: 5rem;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateX(120deg);
+        }
+        .top span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;         
+            animation: zoominn 8s linear infinite ;
+        }  
+        @keyframes zoominn {
+            0%{
+                transform: scale(.1);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+            30%{
+                transform: scale(.5);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+            50%{
+                transform: scale(1);
+                transform: translateZ(100px);
+                width: 15%;height: 15px;
+            }
+            80%{
+                transform: scale(.5);
+                transform: translateZ(100px);
+                width: 15%;height: 15%;
+            }
+            100%{
+                transform: scale(.1);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+        }
+        .top span:nth-child(1){
+            animation-delay: .1s;
+            border: 15px solid blue;
+        }
+        .top span:nth-child(2){
+            animation-delay: 1.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .top span:nth-child(3){
+            animation-delay: 2s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .top span:nth-child(4){
+            animation-delay: 2.5s;
+            border: 15px solid blue;
+        }
+        .top span:nth-child(5){
+            animation-delay: 3s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .top span:nth-child(6){
+            animation-delay: 3.5s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .top span:nth-child(7){
+            animation-delay: 5s;
+            border: 15px solid blue;
+        }
+        .top span:nth-child(8){
+            animation-delay: 6.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .top span:nth-child(9){
+            animation-delay: 8s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .mid{
+            margin-top: 5rem;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(500px) rotateX(180deg);
+        }
+        .mid span{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;         
+            animation: zoominout 8s linear infinite ;
+        }  
+        @keyframes zoominout {
+            0%{
+                transform: scale(.1);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+            30%{
+                transform: scale(.5);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+            50%{
+                transform: scale(1);
+                transform: translateZ(100px);
+                width: 15%;height: 15px;
+            }
+            80%{
+                transform: scale(.5);
+                transform: translateZ(100px);
+                width: 15%;height: 15%;
+            }
+            100%{
+                transform: scale(.1);
+                transform: translateZ(-100px);
+                width: 100%;height: 100%;
+            }
+        }
+        .mid span:nth-child(1){
+            animation-delay: .1s;
+            border: 15px solid blue;
+        }
+        .mid span:nth-child(2){
+            animation-delay: 1.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .mid span:nth-child(3){
+            animation-delay: 2s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .mid span:nth-child(4){
+            animation-delay: 2.5s;
+            border: 15px solid blue;
+        }
+        .mid span:nth-child(5){
+            animation-delay: 3s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .mid span:nth-child(6){
+            animation-delay: 3.5s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+        .mid span:nth-child(7){
+            animation-delay: 5s;
+            border: 15px solid blue;
+        }
+        .mid span:nth-child(8){
+            animation-delay: 6.5s;
+            border: 15px solid rgb(0, 255, 51);
+        }
+        .mid span:nth-child(9){
+            animation-delay: 8s;
+            border: 15px solid rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="right">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+    <div class="left">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+    <div class="top">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+    <div class="mid">
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+        <span></span><span></span><span></span>
+    </div>
+   
+</body>
+</html>

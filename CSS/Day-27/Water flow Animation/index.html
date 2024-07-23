@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water flow Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       h1{
+        font-size: 130px;
+        letter-spacing: 20px;
+        position: absolute;
+        top: 45%;
+        left: 50%;     
+        transform: translate(-50%,-50%);
+       }
+       body{
+        background-color: black;
+       }
+       h1:nth-child(1){
+        color: transparent;
+        -webkit-text-stroke: 1px #69C6FF;
+       }
+       h1:nth-child(2){
+        color: #69C6FF;
+        animation: waterflow 1s ease-in-out infinite alternate;
+       
+       }
+       @keyframes waterflow {
+        0%,100%
+        {
+            clip-path: polygon(46% 54%, 100% 39%, 100% 99%, 0 100%, 0 42%);
+       }
+       50%{
+        clip-path: polygon(49% 61%, 100% 51%, 100% 99%, 0 100%, 0 51%);
+       }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Water</h1>
+            <h1>Water</h1>
+        </div>
+    </div>
+</body>
+</html>

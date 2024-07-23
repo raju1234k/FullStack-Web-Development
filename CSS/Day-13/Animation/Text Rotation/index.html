@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoky text flow</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        h1{
+            font-size: 70px;
+        }
+        section{
+            position: absolute;
+            top: 35%;
+            left: 15%;
+        }
+       h1 span{
+        opacity: 0;
+        display: inline-block;
+        animation: anim .5s linear forwards;
+       }
+       @keyframes anim {
+        0%{
+            opacity: 0;
+            transform: rotatey(-90deg);
+            filter: blur(10px);
+        }
+        100%{
+            opacity: 1;
+            transform: rotatey(0deg);
+            filter: blur(0px);
+        }
+       }
+       h1 span:nth-child(1)
+       {
+        animation-delay: 0s;
+        color: red;
+      
+       }
+       h1 span:nth-child(2)
+       {
+        animation-delay: 1s;
+        color: red;
+       }
+       h1 span:nth-child(3)
+       {
+        animation-delay: 1.5s;
+        color: red;
+       }
+       h1 span:nth-child(4)
+       {
+        animation-delay: 2s;
+       }
+       h1 span:nth-child(5)
+       {
+        animation-delay: 2.5s;
+       }
+       h1 span:nth-child(6)
+       {
+        animation-delay: 3s;
+        color: green;
+       }
+       h1 span:nth-child(7)
+       {
+        animation-delay: 3.5s;
+        color: green;
+       }
+       h1 span:nth-child(8)
+       {
+        animation-delay: 4s;
+        color: green;
+       }
+       h1 span:nth-child(9)
+       {
+        animation-delay: 4.5s;
+        color: green;
+       }
+       h1 span:nth-child(10)
+       {
+        animation-delay: 5s;
+        color: green;
+       }
+       h1 span:nth-child(11)
+       {
+        animation-delay: 5.5s;
+        color: green;
+       }
+
+       h1 span:nth-child(12)
+       {
+        animation-delay: 6s;
+        color: green;
+       }
+       h1 span:nth-child(13)
+       {
+        animation-delay: 6.5s;
+        color: green;
+       }
+       h1 span:nth-child(14)
+       {
+        animation-delay: 7s;
+        color: green;
+       }
+     img{
+        animation: image 18s forwards;
+     }
+     @keyframes image {
+        0%{
+            opacity: 0;
+            filter: blur(5px);
+        }
+        50%{
+            opacity: 0.2;
+            filter: blur(2px);
+        }
+        
+        100%{
+            opacity: .4;
+            filter: blur(0px);
+        }
+
+     }
+    </style>
+</head>
+<body>
+   
+    <img src="SNN.jpg" alt="">
+    <section>
+        <h1>
+            <span>T</span>
+            <span>H</span>
+            <span>E</span>
+           &nbsp; <span>R</span>
+            <span>S</span>
+          &nbsp;   <span>P</span>
+            <span>L</span>
+            <span>A</span>
+            <span>T</span>
+            <span>E</span>
+            <span>F</span>
+            <span>O</span>
+            <span>R</span>
+            <span>M</span>
+        </h1>
+    </section>
+</body>
+</html>
