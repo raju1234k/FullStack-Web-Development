@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Sign Up Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: black;
+           
+        }
+        .box{
+            width: 400px;
+            height: 480px;
+            border: 2px solid rgb(255, 255, 255);
+            position: absolute;
+            top: 10%;
+            left: 30%;
+            border-radius: 10px;
+            
+        }
+        .header a{
+            color: white;
+            font-family: arial;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+           position: relative;
+            top: 4rem;
+          
+            left: 2rem;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        .box1{
+            width: 250px;
+            height: 350px;
+            border: 1px solid rgb(255, 255, 255);
+            background-color:rgb(85, 85, 85);
+            border-radius: 20px;
+        }
+        h6{
+            font-weight: 600;
+
+        }
+        .div{
+            display: flex;
+        }
+        .line{
+            width: 180px;
+            height: 1px;
+            box-shadow: 0px 1px 0px darkgray;
+        }
+        .main a{
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            margin-left: -20%;
+        }
+        .sign{
+            margin-top: 6rem;
+            margin-left: 1rem;
+        }
+        .main{
+            margin-left: 2rem;
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            font-weight: 600;
+
+        }
+        
+        #input{
+            width: 180px;
+            height: 30px;
+            border-radius: 18px;
+            background: none;
+            box-shadow: 
+            2px 2px 9px white,
+            -2px -2px 9px white,
+            -2px 2px 9px white,
+            2px -2px 9px white ;
+            color: white; 
+            
+        }
+       
+        button{
+            cursor: pointer;
+            text-align: center;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="header">
+                <a href="">SIGN IN</a>
+                #nbsp;
+                <a href="">SIGN UP</a>
+                
+                <div class="sign">
+                    <div class="container">
+                        <div class="box1">
+                            <div class="main">
+                                <br>
+                                <h6>USERNAME</h6>
+                              
+                              <input type="text" id="input" required>
+                                <h6>PASSWORD</h6>
+                               
+                                <input type="password" id="input" required>
+                                <div class="div">
+                                    <input type="checkbox" required >
+                                    &nbsp;
+                                  &nbsp;  <h6>Keep me Singned in</h6>
+                                </div>
+                              <input type="submit" id="input">
+                                <br>
+                                <div class="line"></div>
+                                <br>
+                                <a href="">Forget password?</a>
+                
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                </div>
+                <div class="signup">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
