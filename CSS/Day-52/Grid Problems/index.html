@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .main{
+            width: 600px;
+            height: 400px;
+            border: 2px solid black;
+            margin: auto;
+            display: grid;
+            grid-template-columns:auto auto auto;
+            gap: 20px;
+            padding: 10px;
+            
+        }
+        .main div{
+            border: 1px solid red;
+            font-size: 50px;
+            background-color: aqua;
+            text-align: center;
+        }
+        #one{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+        #two{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        }
+      
+     #foot{
+        grid-column-start: 1;
+        grid-column-end: 4;
+     }
+     #side{
+        grid-row-start: 3;
+        grid-row-end: 5;
+     }
+     #art{
+        grid-row-start: 3;
+        grid-row-end: 5;
+     }
+     #act{
+        grid-row-start: 3;
+        grid-row-end:5;
+     }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="one">Header</div>
+        <div id="two">Navbar</div>
+        <div id="side">Article</div>  
+        <div id="art">Section</div>
+        <div id="act">Sidebar</div>
+        
+        <div id="foot">Footer   </div>
+       
+      
+    </div>
+</body>
+</html>
