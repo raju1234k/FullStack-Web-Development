@@ -1,1 +1,1 @@
-Full Stack Web Development Tutorial 
+Full-stack JavaScript: MERN stack allows developers to use a single programming language, JavaScript, throughout the entire application stack, both front and back end. This enables code reuse, streamlines development, and simplifies the learning curve for JavaScript developers.
