@@ -31,3 +31,66 @@ let fullName=`${myName} ${MySurname}`
 // console.log(str.trim());
 // console.log(str.trimStart())
 // console.log(str.trimEnd());
+
+
+let firstaname=`Raju 
+kumar
+surya
+er 
+raju 
+jayvant `
+let secondname='kumar'
+console.log(length(firstaname))
+console.log(firstaname)
+console.log(firstaname + secondname)
+
+let op1='Raju'
+let op2='KUMAR'
+
+let ans=`${op1}${op2}`
+console.log(ans)
+console.log(op1.length)
+console.log(op1.toUpperCase())
+console.log(op2.toLowerCase())
+console.log(typeof(ans))
+// indexing AND Slicing 
+
+let nam='RAJU'
+console.log(nam[0])
+console.log(nam[1])
+console.log(nam.substring(0,2))
+
+let one='er raju jayvant '
+let shdh=one.split(' ')
+console.log(shdh)
+console.log(shdh.join('"  "'))
+
+
+console.log('For loop')
+for(i=1;i<=10;i++){
+    console.log(2*i)
+}
+
+console.log('while loop')
+let j=1;
+while(j<=10){
+    console.log(2*j);
+    j++;
+}
+
+
+console.log('do while loop')
+let i=1;
+do{
+  console.log(2*i);
+  i++;
+}
+while(i<=10)
+let name1='Raju Kumar'
+console.log(name1.substring(0))
+
+let str='hello ji "\kaise"\ ho sare';
+console.log(str.split(' '))
+console.log(typeof(str))
+
+
